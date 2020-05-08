@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html"> <img id="logo" src="images/SupportmydayLogo.jpg" alt="logo"> </a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li><a href="inschrijving.html"><button class="header-button">Sign up now!</button></a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="row">
+        <div class="column" onclick="openTab('b1');">
+          <img class="icon-image" src="images/laptop-icon.png" alt="">
+          <h2>Webdev 101</h2>
+        </div>
+        <div class="column" onclick="openTab('b2');">
+          <img class="icon-image" src="images/design-icon.png" alt="">
+          <h2>UI/UX Design</h2>
+          </div>
+        <div class="column" onclick="openTab('b3');">
+          <img class="icon-image" src="images/seo-icon.png" alt="">
+          <h2>SEO Basics</h2>
+        </div>
+      </div>
+
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b1" class="containerTab">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Webdev 101</h2>
+        <p>This website development course will teach you how to build your first website. It will go over the basics over wordpress and webdevelopment, as well as how to set up hosting and a domain. At the end of this course you will be able to build and maintain a fully functional website.</p>
+        <div class="teacher-wrapper">
+              <a href="inschrijving.html"><button type="button" name="button">Enroll now!</button></a>
+
+        </div>
+
+      </div>
+
+      <div id="b2" class="containerTab" style="display:none;background:white">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>UI/UX design</h2>
+        <p>This UI/UX design is for more experienced website developers who want to get more advanced. This course will teach you everything about UI/UX design. It will go over how to get the user's attention and how to keep them on your website. You will learn all the fundamentels of UI/UX design.</p>
+        <div class="teacher-wrapper">
+          <a href="inschrijving.html"><button type="button" name="button">Enroll now!</button></a>
+
+        </div>
+      </div>
+
+      <div id="b3" class="containerTab" style="display:none;background:white">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>SEO Basics</h2>
+        <p>This coursed is primairly for student with a website of them selfs. It focusses on getting that website in the search engines. At the end of this course you will be able to get every website on the number one page of google and other search engines.</p>
+        <div class="teacher-wrapper">
+          <a href="inschrijving.html"><button type="button" name="button">Enroll now!</button></a>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="cta-wrapper">
+      <div class="wrapper">
+        <div class="cta-content">
+          <h1>Lets create a new beginning together!</h1>
+          <p>Learn to create the perfect website for your business and be te best developer you can be.</p>
+            <a href="inschrijving.html"><button class="cta-button" type="button" name="button">Sign up now!</button></a>
+        </div>
+      </div>
+    </div>
+
+
+        <footer id="footer">
+          <div class="wrapper">
+            <div class="footer-wrapper">
+              <div class="contact-wrapper">
+                <h2>Keep in touch</h2>
+                <form class="contact-form"  method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" value="">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" value="">
+                    <label for="message">Message: </label>
+                    <input type="text" name="message" value="">
+                    <input type="submit" onclick="submit()" name="" value="Verzenden">
+                </form>
+              </div>
+              <div class="links-wrapper">
+                <ul>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="">
+                <img class="footer-logo" src="images/Logo.png" alt="">
+              </div>
+            </div>
+            </div>
+        </footer>
+  </body>
+  <script type="text/javascript">
+    function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+  </script>
+</html>

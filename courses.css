@@ -1,0 +1,45 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: left;
+  font-size: 25px;
+  cursor: pointer;
+  height: 6em;
+  margin-top: 6em;
+  display: flex;
+}
+
+.column:hover{
+  background-color: #5EBDB0;
+  color: white;
+}
+
+.column h2 {
+  margin-left: .6em;
+}
+
+.containerTab {
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.teacher {
+  height: 200px;
+
+  border-radius: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

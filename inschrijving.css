@@ -1,0 +1,45 @@
+.inschrijving-wrapper {
+  background: linear-gradient(
+      rgba(128, 128, 128, 0.45),
+      rgba(128, 128, 128, 0.45)
+    ), url('../images/man-using-ballpoint-pen-374820.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.inschrijving-content {
+  display: flex;
+  padding-top: 10em;
+}
+
+.form-wrapper{
+  background: white;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.side-wrapper{
+  background: white;
+  padding: 2em;
+  border-radius: 20px;
+  margin-left: 6em;
+  height: 20%;
+}
+
+input[type=text], select {
+  width: 400px;
+  display: block;
+  padding: 8px 10px;
+  margin: .6em 0 2em;
+}
+
+input[type=submit] {
+  width: 400px;
+  background-color: #5EBDB0;
+  border: none;
+  color: white;
+  border-radius: 29px;
+  padding: .6em 2em;
+  font-size: 20px;
+  font-weight: bold;
+}
